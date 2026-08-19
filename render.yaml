@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: expense-tracker
+    runtime: node
+    buildCommand: npm install && npm run build && npm --prefix server install
+    startCommand: npm --prefix server start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.6-flash
+      - key: CLIENT_ORIGIN
+        value: https://expense-tracker.onrender.com
