@@ -2,7 +2,7 @@
 
 A React and Express expense tracker with dashboards, analytics, local expense storage, AI budgeting help, and bill-image scanning.
 
-->personal-expense-tracker-qx9ta3h3w.vercel.app
+->[personal-expense-tracker-qx9ta3h3w.vercel.app](https://personal-expense-tracker-qx9ta3h3w.vercel.app)
 
 ## Features
 
