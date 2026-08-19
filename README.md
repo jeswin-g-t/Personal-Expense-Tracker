@@ -2,7 +2,7 @@
 
 A React and Express expense tracker with dashboards, analytics, local expense storage, AI budgeting help, and bill-image scanning.
 
-> Deploy to Vercel using the [deployment steps](DEPLOYMENT.md), then add the generated URL as the live button here.
+> personal-expense-tracker-qx9ta3h3w.vercel.app
 
 ## Features
 
