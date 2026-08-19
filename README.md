@@ -2,6 +2,12 @@
 
 A React and Express expense tracker with dashboards, analytics, local expense storage, AI budgeting help, and bill-image scanning.
 
+<p>
+	<a href="https://expense-tracker.onrender.com"><strong>Try it live</strong></a>
+</p>
+
+The live button opens the deployed website after the Render service from `render.yaml` has been deployed.
+
 ## Features
 
 - Add, edit, delete, search, filter, sort, and export expenses.
