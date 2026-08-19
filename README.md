@@ -2,11 +2,7 @@
 
 A React and Express expense tracker with dashboards, analytics, local expense storage, AI budgeting help, and bill-image scanning.
 
-<p>
-	<a href="https://expense-tracker.onrender.com"><strong>Try it live</strong></a>
-</p>
-
-The live button opens the deployed website after the Render service from `render.yaml` has been deployed.
+> The live website link will work after the Render service is deployed. Follow the [deployment steps](DEPLOYMENT.md) to create it.
 
 ## Features
 
@@ -29,5 +25,11 @@ Copy `server/.env.example` to `server/.env` and add your `GEMINI_API_KEY` before
 ## Deploy
 
 The included `render.yaml` deploys the built website and API as one Render web service. See [DEPLOYMENT.md](DEPLOYMENT.md) for the publishing steps.
+
+After deployment, replace the deployment notice above with:
+
+```html
+<p><a href="https://YOUR-RENDER-SERVICE.onrender.com"><strong>Try it live</strong></a></p>
+```
 
 Expenses are stored in browser local storage, so each user has a separate local expense list.

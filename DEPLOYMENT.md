@@ -10,6 +10,8 @@ The app is deployed as one Node web service. Express serves the built Vite websi
 4. When Render asks for `GEMINI_API_KEY`, enter it as a secret. Do not commit it to the repository.
 5. Deploy the service. Render will provide a public `https://...onrender.com` website URL to share.
 
+The URL is not created by GitHub alone. Until the Blueprint is deployed in Render, an `onrender.com` URL will return `404 Not Found`.
+
 The frontend uses its own public origin for API requests, so chat and bill scanning work from the same public site without a second URL.
 
 ## Important
