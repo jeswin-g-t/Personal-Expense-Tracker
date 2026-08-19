@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/chat", "destination": "/api/index?route=chat" },
+    { "source": "/api/scan-bill", "destination": "/api/index?route=scan-bill" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
