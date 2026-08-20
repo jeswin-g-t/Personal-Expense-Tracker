@@ -1,33 +1,48 @@
 # Personal Expense Tracker
-
-A React and Express expense tracker with dashboards, analytics, local expense storage, AI budgeting help, and bill-image scanning.
+An AI-powered, real-time personal finance dashboard — track spending, scan bills automatically, chat with your data, and stay on top of your budget.
 
 ->[personal-expense-tracker-qx9ta3h3w.vercel.app](https://personal-expense-tracker-qx9ta3h3w.vercel.app)
 
-## Features
+Personal Expense Tracker is a web-based financial monitoring system built to help individuals record, categorize, and analyze their daily expenses and income in real time. It combines a clean, responsive dashboard with an AI layer that reads uploaded bills and answers natural-language questions about your spending — turning raw transaction data into decisions you can actually act on.
 
-- Add, edit, delete, search, filter, sort, and export expenses.
-- View monthly totals, category breakdowns, and spending trends.
-- Ask Gemini for budgeting and expense-reduction advice.
-- Upload a JPG, PNG, or WebP bill image to extract, categorize, review, and save line items.
+## Features:
+- 📊 **Interactive Dashboard** — total spent, transaction count, average expense, and active categories at a glance
+- 🧾 **AI Bill Scanning** — drag and drop a bill image or PDF and have the details auto-extracted into an expense entry
+- 💬 **AI Expense Chat** — ask natural-language questions about your spending ("What's my total spending this month?") and get instant answers
+- 📈 **Deep Analytics** — category breakdowns, spending distribution, monthly trends, and daily spending patterns via interactive charts
+- 📤 **PDF Export** — download analytics reports for personal record-keeping
 
-## Run Locally
 
-```bash
-npm install
-npm --prefix server install
-npm run dev
-npm --prefix server start
-```
+## Tech Stack
 
-Copy `server/.env.example` to `server/.env` and add your `GEMINI_API_KEY` before using AI features. The frontend runs at `http://localhost:5173` and the API runs at `http://localhost:3001`.
+| Layer | Technology |
+| --- | --- |
+| **Backend** | Python, Flask |
+| **Database** | MongoDB (via PyMongo) |
+| **Frontend** | Tailwind CSS, JavaScript |
+| **Charts** | Chart.js |
+| **AI / NLP** | Gemini AI (bill parsing & conversational chat) |
+| **Deployment** | Vercel |
 
-## Deploy
+Installation
+bash
+# Clone the repository
+git clone https://github.com/<your-username>/personal-expense-tracker.git
+cd personal-expense-tracker
 
-Vercel deploys the Vite website and serverless Gemini API together. After deployment, replace the deployment notice above with:
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
 
-```html
-<p><a href="https://YOUR-PROJECT.vercel.app"><strong>Try it live</strong></a></p>
-```
+# Install dependencies
+pip install -r requirements.txt
+Environment Variables
 
-Expenses are stored in browser local storage, so each user has a separate local expense list.
+Create a .env file in the root directory:
+MONGO_URI=your_mongodb_connection_string
+SECRET_KEY=your_flask_secret_key
+GEMINI_API_KEY=your_gemini_api_key
+
+Run Locally
+flask run
