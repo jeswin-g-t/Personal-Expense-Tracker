@@ -1,7 +1,8 @@
 # Personal Expense Tracker
 An AI-powered, real-time personal finance dashboard — track spending, scan bills automatically, chat with your data, and stay on top of your budget.
 
-->[personal-expense-tracker-qx9ta3h3w.vercel.app](https://personal-expense-tracker-qx9ta3h3w.vercel.app)
+->[Live Demo]:https://personal-expense-tracker-flax-rho.vercel.app/
+
 
 Personal Expense Tracker is a web-based financial monitoring system built to help individuals record, categorize, and analyze their daily expenses and income in real time. It combines a clean, responsive dashboard with an AI layer that reads uploaded bills and answers natural-language questions about your spending — turning raw transaction data into decisions you can actually act on.
 
